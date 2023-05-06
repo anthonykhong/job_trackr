@@ -4,9 +4,9 @@ import { getUser } from "../../utilities/users-service";
 import AuthPage from "../AuthPage/AuthPage";
 import SideBar from "../../components/SideBar/SideBar";
 import Dashboard from "../Dashboard/Dashboard";
-import Job from "../Job/Job";
 import NewJob from "../NewJob/NewJob";
 import EditJob from "../../components/EditJob/EditJob";
+import VideoPage from "../VideoPage/VideoPage";
 
 import "./App.css";
 
@@ -28,6 +28,7 @@ export default function App() {
               <Route path="/job" element={<Dashboard />} />
               <Route path="/job/new" element={<NewJob />} />
               <Route path="/job/:id/edit" element={<EditJob />} />
+              <Route path="/video" element={<VideoPage />} />
             </Routes>
           </div>
         </>
