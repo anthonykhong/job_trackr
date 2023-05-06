@@ -39,8 +39,10 @@ export default function VideoPage() {
         </h1>
       </div>
       <SearchBar onSearch={fetchVideos} />
-      <VideoDetail videoId={selectedVideoId} />
-      <VideoList videos={videos} onVideoSelect={handleVideoSelect} />
+      <div className="flex flex-col items-center">
+        <VideoDetail videoId={selectedVideoId} />
+        <VideoList videos={videos} onVideoSelect={handleVideoSelect} />
+      </div>
     </div>
   );
 }
