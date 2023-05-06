@@ -7,6 +7,9 @@ module.exports = {
       height: {
         100: "97vmin",
       },
+      width: {
+        90: "120vmin",
+      },
     },
   },
   plugins: [],
