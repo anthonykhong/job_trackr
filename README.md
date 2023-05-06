@@ -1,6 +1,6 @@
 <div align="center">
   
-<img src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683269824/Screenshot_2023-05-05_at_8.44.27_AM_ro0lja.png" width="30%" height="15%" />
+<img src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683397609/Screenshot_2023-05-06_at_8.25.08_PM_auqlcq.png" width="30%" height="15%" />
 
 ### Find your dream job, one application at a time
 
