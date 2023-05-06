@@ -53,7 +53,7 @@ export default function SideBar({ updateUser }) {
               </li>
               <li className="rounded-sm">
                 <Link
-                  to="#"
+                  to="/video"
                   className="flex items-center p-2 space-x-3 rounded-md"
                 >
                   <img
