@@ -16,7 +16,7 @@ export default function SideBar({ updateUser }) {
             <Link to="/">
               <img
                 className="h-12 pr-2 hover:scale-110"
-                src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683269824/Screenshot_2023-05-05_at_8.44.27_AM_ro0lja.png"
+                src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683397609/Screenshot_2023-05-06_at_8.25.08_PM_auqlcq.png"
               />
             </Link>
             <h2 className="font-bold">JobTrackr</h2>
