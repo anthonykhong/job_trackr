@@ -4,7 +4,7 @@ import JobCard from "../JobCard/JobCard";
 export default function JobList({ user, jobs }) {
   return (
     <>
-      <main>
+      <main className="flex justify-center flex-col p-10">
         {jobs.map((j, idx) => (
           <JobCard user={user} job={j} index={idx} key={idx} />
         ))}
