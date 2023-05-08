@@ -25,7 +25,7 @@ export default function App() {
           <div className="flex-grow ml-60">
             <Routes>
               {/* <Route path="/" element={<HomePage />} /> */}
-              <Route path="/job" element={<Dashboard />} />
+              <Route path="/job" element={<Dashboard user={user} />} />
               <Route path="/job/new" element={<NewJob />} />
               <Route path="/job/:id/edit" element={<EditJob />} />
               <Route path="/video" element={<VideoPage />} />
