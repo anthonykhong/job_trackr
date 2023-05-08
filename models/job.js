@@ -33,6 +33,12 @@ const jobSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  favorites: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
 });
 
 module.exports = mongoose.model("Job", jobSchema);
