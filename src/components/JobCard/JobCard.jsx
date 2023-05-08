@@ -1,12 +1,22 @@
 import React from "react";
 
-export default function JobCard({ user, job, handleEditJob, handleDeleteJob }) {
+export default function JobCard({
+  user,
+  job,
+  handleEditJob,
+  handleDeleteJob,
+  handleFavorite,
+}) {
   function handleEdit() {
     handleEditJob(job._id);
   }
 
   function handleDelete() {
     handleDeleteJob(job._id);
+  }
+
+  function favoriteHandler() {
+    handleFavorite(job._id);
   }
 
   return (
@@ -30,6 +40,21 @@ export default function JobCard({ user, job, handleEditJob, handleDeleteJob }) {
         onClick={handleDelete}
       >
         Delete
+      </button>
+      <button
+        className="px-4 py-2 rounded text-white mb-2"
+        onClick={favoriteHandler}
+      >
+        <div className="flex flex-row items-center">
+          <img
+            className="h-8 mr-1"
+            src={
+              job.favorites.length > 0
+                ? "https://res.cloudinary.com/diw7vmgum/image/upload/v1683581483/icons8-star-100_b7fu5f.png"
+                : "https://res.cloudinary.com/diw7vmgum/image/upload/v1683581432/icons8-star-100_copy_x7fewz.png"
+            }
+          />
+        </div>
       </button>
     </div>
   );

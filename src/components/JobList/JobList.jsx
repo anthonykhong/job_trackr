@@ -6,6 +6,7 @@ export default function JobList({
   jobs,
   handleEditJob,
   handleDeleteJob,
+  handleFavorite,
 }) {
   return (
     <>
@@ -16,6 +17,7 @@ export default function JobList({
             job={j}
             handleEditJob={handleEditJob}
             handleDeleteJob={handleDeleteJob}
+            handleFavorite={handleFavorite}
             index={idx}
             key={idx}
           />
