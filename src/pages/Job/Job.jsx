@@ -18,10 +18,24 @@ export default function Job({ user }) {
     navigate(`/job/${id}/edit`);
   }
 
+  async function handleDeleteJob(id) {
+    try {
+      await jobsAPI.deleteJob(id);
+      setJobs(jobs.filter((job) => job._id !== id));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div>
       <div>
-        <JobList user={user} jobs={jobs} handleEditJob={handleEditJob} />
+        <JobList
+          user={user}
+          jobs={jobs}
+          handleEditJob={handleEditJob}
+          handleDeleteJob={handleDeleteJob}
+        />
       </div>
     </div>
   );
