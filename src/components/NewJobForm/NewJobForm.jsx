@@ -7,6 +7,8 @@ export default function NewJobForm({ handleAddNewJob }) {
     location: "",
     status: "applied",
     jobType: "remote",
+    contact: "",
+    note: "",
   });
 
   async function handleChange(event) {
@@ -93,6 +95,30 @@ export default function NewJobForm({ handleAddNewJob }) {
             <option value="on-site">On-site</option>
             <option value="hybrid">Hybrid</option>
           </select>
+        </div>
+        <div>
+          <label htmlFor="location" className="block font-medium mb-2">
+            Contact:
+          </label>
+          <input
+            type="text"
+            name="location"
+            value={formData.contact}
+            onChange={handleChange}
+            className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+          />
+        </div>
+        <div>
+          <label htmlFor="location" className="block font-medium mb-2">
+            Note:
+          </label>
+          <textarea
+            type="text"
+            name="location"
+            value={formData.note}
+            onChange={handleChange}
+            className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+          ></textarea>
         </div>
         <div>
           <button

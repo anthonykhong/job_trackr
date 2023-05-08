@@ -26,6 +26,8 @@ export default function JobCard({
       <p className="text-gray-300 text-sm mb-2">{job.location}</p>
       <p className="text-gray-300 text-sm mb-2">Status: {job.status}</p>
       <p className="text-gray-300 text-sm mb-2">Job Type: {job.jobType}</p>
+      <p className="text-gray-300 text-sm mb-2">Contact: {job.contact}</p>
+      <p className="text-gray-300 text-sm mb-2">Note: {job.note}</p>
       <p className="text-gray-300 text-sm mb-2">
         Date Added: {new Date(job.date).toLocaleDateString()}
       </p>

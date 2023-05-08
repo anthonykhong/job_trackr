@@ -11,6 +11,8 @@ export default function EditJob() {
     location: "",
     status: "applied",
     jobType: "remote",
+    contact: "",
+    note: "",
   });
 
   useEffect(() => {
@@ -113,6 +115,30 @@ export default function EditJob() {
               <option value="on-site">On-site</option>
               <option value="hybrid">Hybrid</option>
             </select>
+          </div>
+          <div>
+            <label htmlFor="location" className="block font-medium mb-2">
+              contact:
+            </label>
+            <input
+              type="text"
+              name="contact"
+              value={job.contact}
+              onChange={handleChange}
+              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+            />
+          </div>
+          <div>
+            <label htmlFor="location" className="block font-medium mb-2">
+              Note:
+            </label>
+            <textarea
+              type="text"
+              name="note"
+              value={job.note}
+              onChange={handleChange}
+              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+            ></textarea>
           </div>
           <div>
             <button

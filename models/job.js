@@ -29,6 +29,14 @@ const jobSchema = new Schema({
     enum: ["on-site", "remote", "hybrid"],
     default: "remote",
   },
+  contact: {
+    type: String,
+    required: true,
+  },
+  note: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,
