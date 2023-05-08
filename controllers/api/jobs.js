@@ -28,8 +28,20 @@ async function createJob(req, res) {
   }
 }
 
+async function updateJob(req, res) {
+  try {
+    const updatedJob = await Job.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    res.json(updatedJob);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}
+
 module.exports = {
   allJobs,
   getJobById,
   createJob,
+  updateJob,
 };
