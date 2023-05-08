@@ -102,7 +102,7 @@ export default function NewJobForm({ handleAddNewJob }) {
           </label>
           <input
             type="text"
-            name="location"
+            name="contact"
             value={formData.contact}
             onChange={handleChange}
             className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
@@ -114,7 +114,7 @@ export default function NewJobForm({ handleAddNewJob }) {
           </label>
           <textarea
             type="text"
-            name="location"
+            name="note"
             value={formData.note}
             onChange={handleChange}
             className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
