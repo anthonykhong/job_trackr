@@ -2,7 +2,7 @@ const Job = require("../../models/job");
 
 async function getJobById(req, res) {
   try {
-    const job = await Job.findById(req.params.jobId);
+    const job = await Job.findById(req.params.id);
     res.json(job);
   } catch (error) {
     res.status(500).json(error);
