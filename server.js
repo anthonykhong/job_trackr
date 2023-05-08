@@ -14,6 +14,8 @@ app.use(require("./config/checkTokens"));
 
 app.use("/api/users", require("./routes/api/users"));
 
+app.use("/api/jobs/", require("./routes/api/jobs"));
+
 // Error handler to check if route exists
 app.use(function (req, res) {
   console.log(`route: ${req.path} does not exist`);
