@@ -21,3 +21,11 @@ export function updateJob(id, jobData) {
 export function deleteJob(id) {
   return sendRequest(`${BASE_URL}/${id}`, "DELETE", { id });
 }
+
+export function addFavorite(id) {
+  return sendRequest(`${BASE_URL}/${id}/favorite`, "POST");
+}
+
+export function removeFavorite(id) {
+  return sendRequest(`${BASE_URL}/${id}/favorite`, "DELETE");
+}
