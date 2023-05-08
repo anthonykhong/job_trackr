@@ -1,8 +1,12 @@
 import React from "react";
 
-export default function JobCard({ user, job, handleEditJob }) {
+export default function JobCard({ user, job, handleEditJob, handleDeleteJob }) {
   function handleEdit() {
     handleEditJob(job._id);
+  }
+
+  function handleDelete() {
+    handleDeleteJob(job._id);
   }
 
   return (
@@ -20,6 +24,12 @@ export default function JobCard({ user, job, handleEditJob }) {
         onClick={handleEdit}
       >
         Edit
+      </button>
+      <button
+        className="bg-red-500 text-neutral-800 py-2 px-4 rounded"
+        onClick={handleDelete}
+      >
+        Delete
       </button>
     </div>
   );
