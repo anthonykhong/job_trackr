@@ -1,10 +1,13 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import NewJobForm from "../../components/NewJobForm/NewJobForm";
 import * as jobsAPI from "../../utilities//jobs-api";
 
 export default function NewJob() {
+  const navigate = useNavigate();
+
   async function handleAddNewJob(formData) {
     await jobsAPI.createNewJob(formData);
+    navigate("/job");
   }
 
   return (
