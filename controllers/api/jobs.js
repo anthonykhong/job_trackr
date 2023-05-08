@@ -39,9 +39,19 @@ async function updateJob(req, res) {
   }
 }
 
+async function deleteJob(req, res) {
+  try {
+    const deletedJob = await Job.findByIdAndDelete(req.params.id);
+    res.json(deletedJob);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}
+
 module.exports = {
   allJobs,
   getJobById,
   createJob,
   updateJob,
+  deleteJob,
 };
