@@ -48,10 +48,42 @@ async function deleteJob(req, res) {
   }
 }
 
+async function addFavorite(req, res) {
+  try {
+    const user = req.user._id;
+    const job = await Job.findById(req.params.id);
+    if (!job.favorites.includes(user)) {
+      job.favorites.push(user);
+      await job.save();
+    }
+    res.json(job);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}
+
+async function removeFavorite(req, res) {
+  try {
+    const user = req.user._id;
+    const job = await Job.findById(req.params.id);
+    if (job.favorites.includes(user)) {
+      job.favorites = job.favorites.filter(
+        (userId) => userId.toString() !== user.toString()
+      );
+      await job.save();
+    }
+    res.json(job);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}
+
 module.exports = {
   allJobs,
   getJobById,
   createJob,
   updateJob,
   deleteJob,
+  addFavorite,
+  removeFavorite,
 };
