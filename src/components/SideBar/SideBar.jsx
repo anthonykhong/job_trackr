@@ -53,6 +53,20 @@ export default function SideBar({ updateUser }) {
               </li>
               <li className="rounded-sm">
                 <Link
+                  to="job/stat"
+                  className="flex items-center p-2 space-x-3 rounded-md"
+                >
+                  <img
+                    className="h-8"
+                    src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683657557/icons8-pie-chart-100_fyn6y1.png"
+                  />
+                  <span className="hover:scale-110 hover:text-neutral-200">
+                    Statistics
+                  </span>
+                </Link>
+              </li>
+              <li className="rounded-sm">
+                <Link
                   to="/video"
                   className="flex items-center p-2 space-x-3 rounded-md"
                 >
