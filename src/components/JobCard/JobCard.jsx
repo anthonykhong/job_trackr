@@ -57,15 +57,15 @@ export default function JobCard({
                 />
               </button>
               {showFunctions && (
-                <div className="absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg z-10">
+                <div className="absolute right-0 mt-2 w-28 bg-neutral-300 bg-opacity-50 rounded-md shadow-lg z-10">
                   <button
-                    className="block px-4 py-2 text-neutral-800 hover:bg-neutral-500 hover:bg-opacity-50"
+                    className="block w-full text-neutral-100 px-4 py-2 hover:bg-neutral-500 hover:bg-opacity-50"
                     onClick={handleEdit}
                   >
                     Edit
                   </button>
                   <button
-                    className="block px-4 py-2 text-neutral-800 hover:bg-neutral-500 hover:bg-opacity-50"
+                    className="block w-full text-neutral-100 px-4 py-2 hover:bg-neutral-500 hover:bg-opacity-50"
                     onClick={handleDelete}
                   >
                     Delete
@@ -104,7 +104,14 @@ export default function JobCard({
           {job.contact}
         </p>
         <div className="text-gray-300 text-sm mb-2">
-          <p>Note:</p>
+          <div className="flex items-center ">
+            <img
+              className="h-4 mr-1"
+              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683654175/icons8-note-64_qimefa.png"
+              alt="Menu icon"
+            />
+            <p>Note:</p>
+          </div>
           <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2">
             {job.note}
           </p>

@@ -48,7 +48,7 @@ export default function EditJob() {
           Edit
         </h1>
       </div>
-      <div className="bg-neutral-400 bg-opacity-50 m-6 px-10 py-20 rounded-lg text-white">
+      <div className="bg-neutral-400 bg-opacity-50 m-10 px-10 py-20 rounded-lg text-white">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="position" className="block font-medium mb-2">
