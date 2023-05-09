@@ -5,6 +5,7 @@ import AuthPage from "../AuthPage/AuthPage";
 import SideBar from "../../components/SideBar/SideBar";
 import Dashboard from "../Dashboard/Dashboard";
 import NewJob from "../NewJob/NewJob";
+import Stat from "../Stat/Stat";
 import EditJob from "../../components/EditJob/EditJob";
 import VideoPage from "../VideoPage/VideoPage";
 
@@ -27,6 +28,7 @@ export default function App() {
               {/* <Route path="/" element={<HomePage />} /> */}
               <Route path="/job" element={<Dashboard user={user} />} />
               <Route path="/job/new" element={<NewJob />} />
+              <Route path="/job/stat" element={<Stat />} />
               <Route path="/job/:id/edit" element={<EditJob />} />
               <Route path="/video" element={<VideoPage />} />
             </Routes>
