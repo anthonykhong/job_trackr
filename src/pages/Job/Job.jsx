@@ -5,7 +5,7 @@ import * as jobsAPI from "../../utilities/jobs-api";
 
 export default function Job({ user }) {
   const [jobs, setJobs] = useState([]);
-  const [sortOption, setSortOption] = useState("status");
+  const [sortOption, setSortOption] = useState("all");
   const navigate = useNavigate();
 
   useEffect(() => {
