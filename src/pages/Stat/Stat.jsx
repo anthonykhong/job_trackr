@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as jobsAPI from "../../utilities/jobs-api";
 import { getUser } from "../../utilities/users-service";
 import StatGraph from "../../components/StatGraph/StatGraph";
+import StatusCount from "../../components/StatusCount/StatusCount";
 
 export default function Stat() {
   const [data, setData] = useState([]);
@@ -38,7 +39,8 @@ export default function Stat() {
           Statistics
         </h1>
       </div>
-      <div className="rounded-lg bg-white bg-opacity-75 m-10 p-10">
+      <StatusCount />
+      <div className="flex justify-center rounded-lg bg-white bg-opacity-75 m-10 p-10">
         <StatGraph data={data} />
       </div>
     </div>
