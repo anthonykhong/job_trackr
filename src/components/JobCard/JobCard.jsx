@@ -129,7 +129,7 @@ export default function JobCard({
               />
               <p>Note:</p>
             </div>
-            <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2 w-60">
+            <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2 w-52">
               {job.note}
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function JobCard({
               />
               <p>Contact:</p>
             </div>
-            <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2 w-60">
+            <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2 w-52">
               {job.contact}
             </p>
           </div>

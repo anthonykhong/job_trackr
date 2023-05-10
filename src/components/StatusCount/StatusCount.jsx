@@ -31,7 +31,7 @@ export default function StatusCount() {
   return (
     <div className="flex justify-center">
       <div className="lg:flex justify-even m-6">
-        <div className="text-neutral-100 border-b-4 border-yellow-500 rounded-lg bg-white bg-opacity-40 m-4 p-2 w-96">
+        <div className="text-neutral-100 border-b-4 border-yellow-500 rounded-lg bg-white bg-opacity-40 m-4 p-2 w-80">
           <div className="flex justify-between items-center mx-10 my-6">
             <span className="text-yellow-500 text-4xl">{data.applied}</span>
             <img
@@ -39,9 +39,9 @@ export default function StatusCount() {
               src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683753283/icons8-briefcase-64_sxtj1g.png"
             />
           </div>
-          <p className="font-display text-2xl ml-10 my-6">Applied</p>
+          <p className="font-display text-2xl ml-5 my-6">Applied</p>
         </div>
-        <div className="text-neutral-100 border-b-4 border-green-500 rounded-lg bg-white bg-opacity-40 m-4 p-2 w-96">
+        <div className="text-neutral-100 border-b-4 border-green-500 rounded-lg bg-white bg-opacity-40 m-4 p-2 w-80">
           <div className="flex justify-between items-center mx-10 my-6">
             <span className="text-green-500 text-4xl">{data.interview}</span>
             <img
@@ -49,11 +49,11 @@ export default function StatusCount() {
               src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683753247/icons8-schedule-64_iidhwm.png"
             />
           </div>
-          <p className="font-display text-2xl ml-10 my-6">
+          <p className="font-display text-2xl ml-5 my-6">
             Interviews Scheduled
           </p>
         </div>
-        <div className="text-neutral-100 border-b-4 border-red-500 rounded-lg bg-white bg-opacity-40 m-4 p-2 w-96">
+        <div className="text-neutral-100 border-b-4 border-red-500 rounded-lg bg-white bg-opacity-40 m-4 p-2 w-80">
           <div className="flex justify-between items-center mx-10 my-6">
             <span className="text-red-500 text-4xl">{data.declined}</span>
             <img
@@ -61,7 +61,7 @@ export default function StatusCount() {
               src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683753268/icons8-stop-50_m942jb.png"
             />
           </div>
-          <p className="font-display text-2xl ml-10 my-6">
+          <p className="font-display text-2xl ml-5 my-6">
             Declined Opportunity
           </p>
         </div>
