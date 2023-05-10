@@ -15,8 +15,8 @@ export default function SideBar({ updateUser }) {
           <div className="flex items-center">
             <Link to="/">
               <img
-                className="h-12 pr-2 hover:scale-110"
-                src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683397609/Screenshot_2023-05-06_at_8.25.08_PM_auqlcq.png"
+                className="h-9 pr-2 hover:scale-110"
+                src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683760147/task_c2tott.png"
               />
             </Link>
             <h2 className="font-display">JobTrackr</h2>
