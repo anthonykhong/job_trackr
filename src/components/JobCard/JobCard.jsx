@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function JobCard({
   user,
@@ -9,6 +9,7 @@ export default function JobCard({
 }) {
   const currentUser = user._id === job.user._id;
   const [showFunctions, setShowFunctions] = useState(false);
+  const statusClassName = getStatusClassName(job.status);
   const options = {
     weekday: "long",
     month: "long",
@@ -27,9 +28,20 @@ export default function JobCard({
     handleFavorite(job._id);
   }
 
+  function getStatusClassName(status) {
+    if (status === "applied") {
+      return "bg-yellow-500";
+    } else if (status === "interview") {
+      return "bg-green-500";
+    } else if (status === "declined") {
+      return "bg-red-500";
+    }
+    return "";
+  }
+
   if (currentUser) {
     return (
-      <div className="text-white bg-neutral-400 bg-opacity-50 rounded-lg shadow-md p-6 m-4">
+      <div className="text-white bg-neutral-400 bg-opacity-50 rounded-lg shadow-md p-6 m-4 lg:mx-36">
         <div className="flex justify-between items-center">
           <p className="text-gray-300 text-sm mb-2">
             {new Date(job.date).toLocaleDateString("en-US", options)}
@@ -80,13 +92,19 @@ export default function JobCard({
             </div>
           </div>
         </div>
-        <div className="flex justify-between">
-          <h2 className="flex items-center text-xl font-medium mb-3">
-            {job.position}
-          </h2>
+        <h2 className="flex items-center text-xl font-medium mb-3">
+          {job.position}
+        </h2>
+        <div className="flex items-center">
+          <p className="font-display text-white text-lg mb-2 mr-2">
+            {job.company}
+          </p>
+          <p
+            className={`flex justify-center rounded-full text-white text-sm mb-2 p-2 ${statusClassName} bg-opacity-75 w-20`}
+          >
+            {job.status}
+          </p>
         </div>
-        <p className="font-display text-white text-lg mb-2">{job.company}</p>
-        <p className="text-gray-300 text-sm mb-2">Status: {job.status}</p>
         <p className="flex items-center text-gray-300 text-sm mb-2">
           <img
             className="h-4 mr-1"
