@@ -34,15 +34,20 @@ export default function Stat() {
   }, []);
 
   return (
-    <div className="h-screen">
+    <div className="lg:h-screen">
       <div className="rounded-lg bg-neutral-400 bg-opacity-50 mx-6 mt-3 p-6">
         <h1 className="font-display flex justify-center font-extrabold text-white text-4xl">
           Statistics
         </h1>
       </div>
       <StatusCount />
-      <div className="flex justify-center rounded-lg bg-white bg-opacity-75 m-10 p-10">
-        <StatGraph data={data} />
+      <div className="flex justify-center rounded-lg bg-white bg-opacity-70 my-10 mx-10 p-10 lg:mx-48">
+        <div>
+          <h2 className="flex justify-center font-display text-neutral-500 text-xl mb-6 ml-2">
+            Number of Applications/day
+          </h2>
+          <StatGraph data={data} />
+        </div>
       </div>
     </div>
   );
