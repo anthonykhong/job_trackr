@@ -8,6 +8,7 @@ import NewJob from "../NewJob/NewJob";
 import Stat from "../Stat/Stat";
 import EditJob from "../../components/EditJob/EditJob";
 import VideoPage from "../VideoPage/VideoPage";
+import Footer from "../../components/Footer/Footer";
 
 import "./App.css";
 
@@ -32,6 +33,7 @@ export default function App() {
               <Route path="/job/:id/edit" element={<EditJob />} />
               <Route path="/video" element={<VideoPage />} />
             </Routes>
+            <Footer />
           </div>
         </>
       ) : (
