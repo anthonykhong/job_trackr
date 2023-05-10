@@ -19,7 +19,7 @@ export default function App() {
   }
 
   return (
-    <main className="flex">
+    <main className="flex bg-gradient-to-r from-cyan-900 via-blue-950 to-pink-900 animate-gradient-x">
       {user ? (
         <>
           <SideBar updateUser={updateUser} />
