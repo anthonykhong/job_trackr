@@ -31,7 +31,7 @@ export default function NewJobForm({ handleAddNewJob }) {
 
   return (
     <div className="h-screen">
-      <div className="bg-neutral-400 bg-opacity-50 my-20 mx-10 px-10 py-14 rounded-lg text-white lg:mx-60 my-60">
+      <div className="border-x-4 border-indigo-400 bg-neutral-400 bg-opacity-50 my-20 mx-10 px-10 py-14 rounded-lg text-white lg:mx-60 my-60">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="lg:grid grid-cols-2 gap-x-4">
             <div className="mb-2">
