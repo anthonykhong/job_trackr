@@ -10,7 +10,7 @@ export default function JobList({
 }) {
   return (
     <>
-      <main className="flex justify-center flex-col p-10 lg:grid grid-cols-2 gap-x-6">
+      <main className="flex justify-center flex-col mb-56 p-10 lg:grid grid-cols-2 gap-x-6">
         {jobs.map((j, idx) => (
           <JobCard
             user={user}
