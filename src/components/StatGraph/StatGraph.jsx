@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
 export default function StatGraph({ data }) {
   return (
@@ -27,7 +19,6 @@ export default function StatGraph({ data }) {
         <XAxis dataKey="date" />
         <YAxis />
         <Tooltip />
-        {/* <Legend /> */}
         <Bar dataKey="applications" fill="#8884d8" barSize={35} />
       </BarChart>
     </div>
