@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "src/**/*.{jsx,js}"],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      display: ["Russo One", "sans-serif"],
+    },
     extend: {
       height: {
         100: "97vmin",

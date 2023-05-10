@@ -80,7 +80,7 @@ export default function JobCard({
             {job.position}
           </h2>
         </div>
-        <p className="text-white text-lg mb-2">{job.company}</p>
+        <p className="font-display text-white text-lg mb-2">{job.company}</p>
         <p className="text-gray-300 text-sm mb-2">Status: {job.status}</p>
         <p className="flex items-center text-gray-300 text-sm mb-2">
           <img

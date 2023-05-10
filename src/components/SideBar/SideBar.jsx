@@ -19,7 +19,7 @@ export default function SideBar({ updateUser }) {
                 src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683397609/Screenshot_2023-05-06_at_8.25.08_PM_auqlcq.png"
               />
             </Link>
-            <h2 className="font-bold">JobTrackr</h2>
+            <h2 className="font-display">JobTrackr</h2>
           </div>
           <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
