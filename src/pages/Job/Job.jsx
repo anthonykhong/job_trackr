@@ -6,12 +6,14 @@ import * as jobsAPI from "../../utilities/jobs-api";
 export default function Job({ user }) {
   const [jobs, setJobs] = useState([]);
   const [sortOption, setSortOption] = useState("all");
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchJobs() {
       const allJobs = await jobsAPI.getAllJobs();
       setJobs(allJobs);
+      setIsLoading(false);
     }
     fetchJobs();
   }, []);
@@ -98,13 +100,22 @@ export default function Job({ user }) {
             </option>
           </select>
         </div>
-        <JobList
-          user={user}
-          jobs={sortedJobs}
-          handleEditJob={handleEditJob}
-          handleDeleteJob={handleDeleteJob}
-          handleFavorite={handleFavorite}
-        />
+        {isLoading ? (
+          <div className="flex justify-center my-60">
+            <img
+              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683674763/cute-alien_syzt4u.gif"
+              className="h-28 mb-60"
+            />
+          </div>
+        ) : (
+          <JobList
+            user={user}
+            jobs={sortedJobs}
+            handleEditJob={handleEditJob}
+            handleDeleteJob={handleDeleteJob}
+            handleFavorite={handleFavorite}
+          />
+        )}
       </div>
     </div>
   );
