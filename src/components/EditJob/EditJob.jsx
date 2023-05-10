@@ -42,37 +42,71 @@ export default function EditJob() {
   }
 
   return (
-    <div>
+    <div className="h-screen">
       <div className="rounded-lg bg-neutral-400 bg-opacity-50 mx-6 mt-3 p-6">
         <h1 className="font-display flex justify-center font-extrabold text-white text-4xl">
           Edit
         </h1>
       </div>
-      <div className="bg-neutral-400 bg-opacity-50 m-10 px-10 py-20 rounded-lg text-white">
+      <div className="bg-neutral-400 bg-opacity-50 my-20 mx-10 px-10 py-14 rounded-lg text-white lg:mx-60 my-60">
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label htmlFor="position" className="block font-medium mb-2">
-              Position:
-            </label>
-            <input
-              type="text"
-              name="position"
-              value={job.position}
-              onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
-            />
+          <div className="lg:grid grid-cols-2 gap-x-4">
+            <div className="mb-2">
+              <label htmlFor="position" className="block font-medium mb-2">
+                Position:
+              </label>
+              <input
+                type="text"
+                name="position"
+                value={job.position}
+                onChange={handleChange}
+                className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
+              />
+            </div>
+            <div className="mb-2">
+              <label htmlFor="company" className="block font-medium mb-2">
+                Company:
+              </label>
+              <input
+                type="text"
+                name="company"
+                value={job.company}
+                onChange={handleChange}
+                className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
+              />
+            </div>
           </div>
-          <div>
-            <label htmlFor="company" className="block font-medium mb-2">
-              Company:
-            </label>
-            <input
-              type="text"
-              name="company"
-              value={job.company}
-              onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
-            />
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>
+              <label htmlFor="status" className="block font-medium mb-2">
+                Status:
+              </label>
+              <select
+                name="status"
+                value={job.status}
+                onChange={handleChange}
+                className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
+              >
+                <option value="applied">Applied</option>
+                <option value="interview">Interview</option>
+                <option value="declined">Declined</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="jobType" className="block font-medium mb-2">
+                Job Type:
+              </label>
+              <select
+                name="jobType"
+                value={job.jobType}
+                onChange={handleChange}
+                className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
+              >
+                <option value="remote">Remote</option>
+                <option value="on-site">On-site</option>
+                <option value="hybrid">Hybrid</option>
+              </select>
+            </div>
           </div>
           <div>
             <label htmlFor="location" className="block font-medium mb-2">
@@ -83,38 +117,8 @@ export default function EditJob() {
               name="location"
               value={job.location}
               onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
             />
-          </div>
-          <div>
-            <label htmlFor="status" className="block font-medium mb-2">
-              Status:
-            </label>
-            <select
-              name="status"
-              value={job.status}
-              onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
-            >
-              <option value="applied">Applied</option>
-              <option value="interview">Interview</option>
-              <option value="declined">Declined</option>
-            </select>
-          </div>
-          <div>
-            <label htmlFor="jobType" className="block font-medium mb-2">
-              Job Type:
-            </label>
-            <select
-              name="jobType"
-              value={job.jobType}
-              onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
-            >
-              <option value="remote">Remote</option>
-              <option value="on-site">On-site</option>
-              <option value="hybrid">Hybrid</option>
-            </select>
           </div>
           <div>
             <label htmlFor="location" className="block font-medium mb-2">
@@ -125,7 +129,7 @@ export default function EditJob() {
               name="contact"
               value={job.contact}
               onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
             />
           </div>
           <div>
@@ -137,13 +141,13 @@ export default function EditJob() {
               name="note"
               value={job.note}
               onChange={handleChange}
-              className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-500"
+              className="w-full border rounded-lg py-4 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
             ></textarea>
           </div>
-          <div>
+          <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-white text-gray-800 rounded-lg py-2 px-4 hover:bg-gray-200"
+              className="border bg-neutral-400 bg-opacity-50 text-white rounded-lg py-2 px-4 hover:bg-neutral-500"
             >
               Submit
             </button>
