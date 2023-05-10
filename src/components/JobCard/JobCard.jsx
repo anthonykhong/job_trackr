@@ -41,7 +41,7 @@ export default function JobCard({
 
   if (currentUser) {
     return (
-      <div className="text-white bg-neutral-400 bg-opacity-50 rounded-lg shadow-md p-6 m-4 lg:mx-36">
+      <div className="text-white bg-neutral-400 bg-opacity-50 rounded-lg shadow-md p-6 m-4">
         <div className="flex justify-between items-center">
           <p className="text-gray-300 text-sm mb-2">
             {new Date(job.date).toLocaleDateString("en-US", options)}
@@ -95,7 +95,7 @@ export default function JobCard({
         <h2 className="flex items-center text-xl font-medium mb-3">
           {job.position}
         </h2>
-        <div className="flex items-center">
+        <div className="flex items-center mb-4">
           <p className="font-display text-white text-lg mb-2 mr-2">
             {job.company}
           </p>
@@ -105,39 +105,47 @@ export default function JobCard({
             {job.status}
           </p>
         </div>
-        <p className="flex items-center text-gray-300 text-sm mb-2">
-          <img
-            className="h-4 mr-1"
-            src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683590484/icons8-location-100_sbghbb.png"
-          />{" "}
-          {job.location}
-        </p>
-        <p className="flex items-center text-gray-300 text-sm mb-2">
-          <img
-            className="h-4 mr-1"
-            src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683651689/icons8-briefcase-128_csg4ox.png"
-          />{" "}
-          {job.jobType}
-        </p>
-        <p className="flex items-center text-gray-300 text-sm mb-2">
-          <img
-            className="h-4 mr-1"
-            src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683651927/icons8-contact-96_dms0is.png"
-          />{" "}
-          {job.contact}
-        </p>
-        <div className="text-gray-300 text-sm mb-2">
-          <div className="flex items-center ">
+        <div className="grid grid-cols-2 gap-y-2 gap-x-6">
+          <p className="flex items-center text-gray-300 text-sm mb-2">
             <img
               className="h-4 mr-1"
-              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683654175/icons8-note-64_qimefa.png"
-              alt="Menu icon"
-            />
-            <p>Note:</p>
-          </div>
-          <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2">
-            {job.note}
+              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683590484/icons8-location-100_sbghbb.png"
+            />{" "}
+            {job.location}
           </p>
+          <p className="flex items-center text-gray-300 text-sm mb-2">
+            <img
+              className="h-4 mr-1"
+              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683651689/icons8-briefcase-128_csg4ox.png"
+            />{" "}
+            {job.jobType}
+          </p>
+          <div className="text-gray-300 text-sm mb-2">
+            <div className="flex items-center ">
+              <img
+                className="h-4 mr-1"
+                src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683654175/icons8-note-64_qimefa.png"
+                alt="Menu icon"
+              />
+              <p>Note:</p>
+            </div>
+            <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2 w-60">
+              {job.note}
+            </p>
+          </div>
+          <div className="text-gray-300 text-sm mb-2">
+            <div className="flex items-center ">
+              <img
+                className="h-4 mr-1"
+                src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683651927/icons8-contact-96_dms0is.png"
+                alt="Menu icon"
+              />
+              <p>Contact:</p>
+            </div>
+            <p className="rounded-lg bg-white bg-opacity-50 text-neutral-600 text-sm m-2 p-2 w-60">
+              {job.contact}
+            </p>
+          </div>
         </div>
       </div>
     );
