@@ -41,7 +41,7 @@ export default function JobCard({
 
   if (currentUser) {
     return (
-      <div className="text-white border-b-4 border-indigo-400 bg-neutral-400 bg-opacity-50 rounded-lg shadow-md p-6 m-4">
+      <div className="text-white border-b-4 border-indigo-400 bg-neutral-500 bg-opacity-50 rounded-lg shadow-md p-6 m-4">
         <div className="flex justify-between items-center">
           <p className="text-gray-300 text-sm mb-2">
             {new Date(job.date).toLocaleDateString("en-US", options)}

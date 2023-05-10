@@ -31,7 +31,7 @@ export default function NewJobForm({ handleAddNewJob }) {
 
   return (
     <div className="h-screen">
-      <div className="border-x-4 border-indigo-400 bg-neutral-400 bg-opacity-50 my-20 mx-10 px-10 py-14 rounded-lg text-white lg:mx-60 my-60">
+      <div className="border-x-4 border-indigo-400 bg-neutral-600 bg-opacity-50 my-20 mx-10 px-10 py-14 rounded-lg text-white lg:mx-60 my-60">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="lg:grid grid-cols-2 gap-x-4">
             <div className="mb-2">
@@ -41,6 +41,7 @@ export default function NewJobForm({ handleAddNewJob }) {
               <input
                 type="text"
                 name="position"
+                placeholder="ex. Full Stack Developer"
                 value={formData.position}
                 onChange={handleChange}
                 className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
@@ -53,6 +54,7 @@ export default function NewJobForm({ handleAddNewJob }) {
               <input
                 type="text"
                 name="company"
+                placeholder="ex. Google"
                 value={formData.company}
                 onChange={handleChange}
                 className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
@@ -98,6 +100,7 @@ export default function NewJobForm({ handleAddNewJob }) {
             <input
               type="text"
               name="location"
+              placeholder="ex. San Fancisco, CA"
               value={formData.location}
               onChange={handleChange}
               className="w-full border rounded-lg py-2 px-3 bg-transparent text-white focus:outline-none focus:border-gray-400"
