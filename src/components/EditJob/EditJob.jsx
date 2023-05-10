@@ -118,7 +118,7 @@ export default function EditJob() {
           </div>
           <div>
             <label htmlFor="location" className="block font-medium mb-2">
-              contact:
+              Contact:
             </label>
             <input
               type="text"

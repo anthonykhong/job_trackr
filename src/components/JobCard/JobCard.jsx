@@ -9,6 +9,11 @@ export default function JobCard({
 }) {
   const currentUser = user._id === job.user._id;
   const [showFunctions, setShowFunctions] = useState(false);
+  const options = {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  };
 
   function handleEdit() {
     handleEditJob(job._id);
@@ -27,7 +32,7 @@ export default function JobCard({
       <div className="text-white bg-neutral-400 bg-opacity-50 rounded-lg shadow-md p-6 m-4">
         <div className="flex justify-between items-center">
           <p className="text-gray-300 text-sm mb-2">
-            {new Date(job.date).toLocaleString()}
+            {new Date(job.date).toLocaleDateString("en-US", options)}
           </p>
           <div className="flex items-center">
             <button
