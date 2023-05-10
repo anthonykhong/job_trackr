@@ -26,20 +26,20 @@ export default function StatusCount() {
       setData(counts);
     }
     fetchData();
-  }, [currentUser]);
+  }, []);
 
   return (
     <div>
       <div className="flex justify-around m-6">
-        <p className="flex justify-center rounded-lg bg-neutral-400 bg-opacity-50 p-2">
-          Applied: {data.applied}
-        </p>
-        <p className="flex justify-center rounded-lg bg-neutral-400 bg-opacity-50 p-2">
-          Interview: {data.interview}
-        </p>
-        <p className="flex justify-center rounded-lg bg-neutral-400 bg-opacity-50 p-2">
-          Declined: {data.declined}
-        </p>
+        <div className="flex justify-center rounded-lg bg-neutral-400 bg-opacity-50 p-2">
+          <p>Applied: {data.applied}</p>
+        </div>
+        <div className="flex justify-center rounded-lg bg-neutral-400 bg-opacity-50 p-2">
+          <p>Interview: {data.interview}</p>
+        </div>
+        <div className="flex justify-center rounded-lg bg-neutral-400 bg-opacity-50 p-2">
+          <p>Declined: {data.declined}</p>
+        </div>
       </div>
     </div>
   );
