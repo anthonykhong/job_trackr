@@ -16,6 +16,7 @@ app.use("/api/users", require("./routes/api/users"));
 
 const ensureLoggedIn = require("./config/ensureLoggedIn");
 app.use("/api/jobs/", ensureLoggedIn, require("./routes/api/jobs"));
+app.use("/api/videos/", ensureLoggedIn, require("./routes/api/videos"));
 
 // Error handler to check if route exists
 app.use(function (req, res) {
