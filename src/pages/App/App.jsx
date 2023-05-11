@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { getUser } from "../../utilities/users-service";
 import AuthPage from "../AuthPage/AuthPage";
 import SideBar from "../../components/SideBar/SideBar";
+import HomePage from "../HomePage/HomePage";
 import Dashboard from "../Dashboard/Dashboard";
 import NewJob from "../NewJob/NewJob";
 import Stat from "../Stat/Stat";
@@ -26,7 +27,7 @@ export default function App() {
           <SideBar updateUser={updateUser} />
           <div className="flex-grow ml-60">
             <Routes>
-              {/* <Route path="/" element={<HomePage />} /> */}
+              <Route path="/" element={<HomePage />} />
               <Route path="/job" element={<Dashboard user={user} />} />
               <Route path="/job/new" element={<NewJob />} />
               <Route path="/job/stat" element={<Stat />} />
