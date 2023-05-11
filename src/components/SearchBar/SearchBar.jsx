@@ -28,7 +28,7 @@ export default function SearchBar({ onSearch }) {
         />
         <button
           type="submit"
-          className="bg-neutral-700 text-white ml-2 px-4 py-2 rounded-lg hover:bg-neutral-800"
+          className="bg-neutral-600 text-white ml-2 px-4 py-2 rounded-lg hover:bg-neutral-800"
         >
           <img
             className="px-2 py-1"

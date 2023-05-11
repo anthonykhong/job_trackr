@@ -5,7 +5,7 @@ export default function VideoDetail({ videoId }) {
     return (
       <div className="relative">
         <iframe
-          className="w-90 h-96 mx-20"
+          className="w-90 h-110 mx-20"
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="Default Video"
           frameBorder="0"
@@ -19,7 +19,7 @@ export default function VideoDetail({ videoId }) {
   return (
     <div className="relative">
       <iframe
-        className="w-90 h-96 mx-20"
+        className="w-90 h-110 mx-20"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="Selected Video"
         frameborder="0"
