@@ -103,7 +103,7 @@ export default function Job({ user }) {
         {isLoading ? (
           <div className="flex justify-center my-60">
             <img
-              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683674763/cute-alien_syzt4u.gif"
+              src="https://res.cloudinary.com/diw7vmgum/image/upload/v1683831603/kakaotalk-emoticon_z2ft1q.gif"
               className="h-28 mb-60"
             />
           </div>
