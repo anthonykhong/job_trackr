@@ -7,7 +7,7 @@ export default function VideoCard({ video, onVideoSelect }) {
 
   return (
     <div
-      className="rounded-lg bg-neutral-900 bg-opacity-50 m-5 p-6 overflow-y-scroll hover:bg-neutral-500 hover:bg-opacity-50 cursor-pointer"
+      className="rounded-lg bg-neutral-800 bg-opacity-50 m-5 p-6 overflow-y-scroll hover:bg-neutral-500 hover:bg-opacity-50 cursor-pointer"
       onClick={handleVideoSelect}
     >
       <div className="flex">
