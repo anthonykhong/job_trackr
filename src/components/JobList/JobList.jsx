@@ -9,6 +9,7 @@ export default function JobList({
   handleFavorite,
 }) {
   const containerStyle = jobs.length <= 2 ? "h-screen" : "h-full";
+
   return (
     <div className={containerStyle}>
       <main className="flex justify-center flex-col p-10 lg:grid grid-cols-2 gap-x-6">

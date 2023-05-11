@@ -2,7 +2,9 @@ const Job = require("../../models/job");
 
 async function allJobs(req, res) {
   try {
-    const jobs = await Job.find({}).populate("user").sort({ date: -1 });
+    const jobs = await Job.find({ user: req.user._id })
+      .populate("user")
+      .sort({ date: -1 });
     res.json(jobs);
   } catch (error) {
     res.status(500).json(error);
