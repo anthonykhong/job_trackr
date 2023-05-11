@@ -2,25 +2,16 @@ import React, { useState } from "react";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import VideoDetail from "../../components/VideoDetail/VideoDetail";
 import VideoList from "../../components/VideoList/VideoList";
+import * as videosAPI from "../../utilities/videos-api";
 
 export default function VideoPage() {
   const [videos, setVideos] = useState([]);
   const [selectedVideoId, setSelectedVideoId] = useState(null);
 
-  async function fetchVideos(searchQuery) {
-    const url = `https://youtube-v31.p.rapidapi.com/search?q=${searchQuery}&part=snippet%2Cid&regionCode=US&maxResults=10&order=date`;
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "7ea9e04689msh390306d73ce8754p1ad7bdjsn792440c3a042",
-        "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
-      },
-    };
-
+  async function handleSearch(searchQuery) {
     try {
-      const response = await fetch(url, options);
-      const data = await response.json();
-      setVideos(data.items);
+      const data = await videosAPI.fetchVideos(searchQuery);
+      setVideos(data);
       setSelectedVideoId(null);
     } catch (error) {
       console.error(error);
@@ -38,7 +29,7 @@ export default function VideoPage() {
           Videos
         </h1>
       </div>
-      <SearchBar onSearch={fetchVideos} />
+      <SearchBar onSearch={handleSearch} />
       <div className="flex flex-col items-center h-screen">
         <VideoDetail videoId={selectedVideoId} />
         <VideoList videos={videos} onVideoSelect={handleVideoSelect} />
