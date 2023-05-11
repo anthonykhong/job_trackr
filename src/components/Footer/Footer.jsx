@@ -13,12 +13,12 @@ export default function Footer() {
             <a
               target="_blank"
               rel="noreferrer"
-              className="group"
+              className="group rounded-full hover:bg-neutral-800"
               aria-label="LevelUpLounge github page"
               href="https://github.com/anthonykhong/job_trackr"
             >
               <img
-                className="h-12 pr-2"
+                className="h-12"
                 src="https://res.cloudinary.com/diw7vmgum/image/upload/v1682908470/github_acp75p.svg"
               />
             </a>
