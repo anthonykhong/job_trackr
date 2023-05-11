@@ -147,9 +147,9 @@ export default function EditJob() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="border bg-neutral-400 bg-opacity-50 text-white rounded-lg py-2 px-4 hover:bg-neutral-500"
+              className="border bg-neutral-600 bg-opacity-50 text-white rounded-lg py-2 px-4 hover:bg-neutral-800"
             >
-              Submit
+              <span className="font-display">Submit</span>
             </button>
           </div>
         </form>
