@@ -27,16 +27,16 @@ export default function LoginForm({ setUser }) {
     <div className="flex justify-center items-center">
       <div>
         <form
-          className="bg-neutral-300 bg-opacity-75 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4"
+          className="bg-neutral-600 bg-opacity-75 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4"
           autoComplete="off"
           onSubmit={handleSubmit}
         >
-          <h2 className="flex justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-orange-600 text-xl pb-5">
+          <h2 className="font-display flex justify-center font-extrabold text-white text-xl pb-5">
             Login
           </h2>
           <label className="block text-white font-bold mb-2 pt-2">Email</label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow bg-transparent appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             name="email"
             value={credentials.email}
@@ -47,7 +47,7 @@ export default function LoginForm({ setUser }) {
             Password
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow bg-transparent appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
             type="password"
             name="password"
             value={credentials.password}
@@ -56,12 +56,10 @@ export default function LoginForm({ setUser }) {
           />
           <div className="flex items-center justify-center pt-4">
             <button
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-300 to-orange-600 group-hover:from-purple-300 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
               type="submit"
+              className="border bg-neutral-600 bg-opacity-50 text-white rounded-lg py-2 px-4 hover:bg-neutral-800"
             >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-orange-500 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 group-hover:text-white">
-                Log In
-              </span>
+              <span className="font-display">Log In</span>
             </button>
           </div>
           <div className="flex justify-center font-display pt-2 text-white">
