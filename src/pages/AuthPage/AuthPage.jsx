@@ -10,13 +10,13 @@ export default function AuthPage({ setUser }) {
       className="flex flex-col justify-center items-center h-screen w-screen bg-cover bg-center"
       style={{
         backgroundImage:
-          "url(https://res.cloudinary.com/diw7vmgum/image/upload/v1683340446/wallpaperflare.com_wallpaper_1_cudeij.jpg)",
+          "url(https://res.cloudinary.com/diw7vmgum/image/upload/v1683908788/wallpaperflare.com_wallpaper_1_zfdln7.jpg)",
       }}
     >
       <div className="flex justify-center items-center">
         <div className="flex flex-col items-center">
           <div className="pr-60">
-            <h1 className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent text-6xl font-black">
+            <h1 className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 bg-clip-text text-transparent text-6xl font-black">
               JobTrackr
             </h1>
             <h2 className="flex justify-center mt-10 font-bold text-white text-2xl">
