@@ -81,8 +81,6 @@ Click the following links to be redirected to the planning board of the code!
 
 ## :chart_with_upwards_trend: Looking Forward
 
-- [ ] .
-- [ ] .
-- [ ] .
-- [ ] .
-- [ ] .
+- [ ] Add mobile responsive design
+- [ ] Add dark/light mode
+- [ ] Add new sorting categories
