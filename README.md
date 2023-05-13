@@ -69,15 +69,21 @@ Click the following links to be redirected to the planning board of the code!
 
 ```javascript
 
+  function getStatusClassName(status) {
+    if (status === "applied") {
+      return "bg-yellow-500";
+    } else if (status === "interview") {
+      return "bg-green-500";
+    } else if (status === "declined") {
+      return "bg-red-500";
+    }
+    return "";
+  }
 
 ```
 
-```javascript
 
-
-```
-
-### These preceding code snippets displays ....(add text)
+### The preceding code snippet displays the sort functionality on the job application cards. It allows users to differentiate the status of their job application with more ease.
 
 ## :chart_with_upwards_trend: Looking Forward
 
