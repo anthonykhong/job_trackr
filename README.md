@@ -25,7 +25,7 @@
   
 **_Click the following link to be redirected to the live version of the code!_**
 
-## [JobTrackr](https://github.com/anthonykhong/job_trackr/edit/main/README.md)
+## [JobTrackr](https://jobtrackr.herokuapp.com/)
 
 ### Description:
 
