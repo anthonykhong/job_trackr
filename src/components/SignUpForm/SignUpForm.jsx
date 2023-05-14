@@ -49,6 +49,7 @@ export default function SignUpForm({ setUser }) {
             className="shadow bg-transparent appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             name="name"
+            placeholder="pepperlatte"
             value={formData.name}
             onChange={handleChange}
             required
@@ -58,6 +59,7 @@ export default function SignUpForm({ setUser }) {
             className="shadow bg-transparent appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
             type="email"
             name="email"
+            placeholder="Darell@gmail.com"
             value={formData.email}
             onChange={handleChange}
             required

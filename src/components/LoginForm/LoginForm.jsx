@@ -39,6 +39,7 @@ export default function LoginForm({ setUser }) {
             className="shadow bg-transparent appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             name="email"
+            placeholder="Darell@gmail.com"
             value={credentials.email}
             onChange={handleChange}
             required
