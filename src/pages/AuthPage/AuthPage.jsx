@@ -16,7 +16,7 @@ export default function AuthPage({ setUser }) {
       <div className="flex justify-center items-center">
         <div className="flex flex-col items-center">
           <div className="pr-60">
-            <h1 className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 bg-clip-text text-transparent text-6xl font-black">
+            <h1 className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 bg-clip-text text-transparent text-6xl font-black">
               JobTrackr
             </h1>
             <h2 className="flex justify-center mt-10 font-bold text-white text-2xl">
