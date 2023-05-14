@@ -3,15 +3,15 @@ import React, { useState } from "react";
 export default function SearchBar({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearchInputChange = (event) => {
+  function handleSearchInputChange(event) {
     setSearchQuery(event.target.value);
-  };
+  }
 
-  const handleSearchSubmit = (event) => {
+  function handleSearchSubmit(event) {
     event.preventDefault();
     onSearch(searchQuery);
     setSearchQuery("");
-  };
+  }
 
   return (
     <div className="p-10 mx-10">
