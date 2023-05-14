@@ -25,7 +25,7 @@
   
 **_Click the following link to be redirected to the live version of the code!_**
 
-## [JobTrackr]()
+## [JobTrackr](https://github.com/anthonykhong/job_trackr/edit/main/README.md)
 
 ### Description:
 
@@ -49,8 +49,37 @@ Click the following links to be redirected to the planning board of the code!
 
 ### Sign Up/ Login Page
 
+![login page](https://github.com/anthonykhong/job_trackr/assets/116925227/15b2e809-f4ab-4490-be02-fedae76694d3)
+
+Log in to get started! If you don't have an account yet, don't worry, sign up is available!
 
 ### Home Page
+
+![home page](https://github.com/anthonykhong/job_trackr/assets/116925227/8847e6c0-df0d-484a-a24e-ceb052e352a1)
+
+### Dashboard
+
+![dashboard](https://github.com/anthonykhong/job_trackr/assets/116925227/8ae29b23-dc2b-4779-8757-038ae365f72d)
+
+View all the jobs which you applied for and sort them according to your favorites!
+
+### Add the Jobs you Apply to!
+
+![Screenshot 2023-05-14 at 6 42 52 PM](https://github.com/anthonykhong/job_trackr/assets/116925227/e4ee768c-5dbb-48dd-8d85-09651ad357e9)
+
+Found an interesting opportunity? Don't forget to add it to your dashboard!
+
+### Keep Track of your applications
+
+![Screenshot 2023-05-14 at 6 43 00 PM](https://github.com/anthonykhong/job_trackr/assets/116925227/160fb3a0-5b9e-4dab-b2c4-957064681c99)
+
+Oversee the status of your jobs and the number of jobs to which you apply to daily! Helpful for ISA students!
+
+### Prepare for Interviews with Embedded Youtube API
+
+![youtube](https://github.com/anthonykhong/job_trackr/assets/116925227/66cdb270-9580-4148-91ad-acb02a0e7739)
+
+No need to open a new tab for Youtube, search directly for videos that will be helpful towards your job search directly within this app!
 
 
 ## :computer: Technologies Used
